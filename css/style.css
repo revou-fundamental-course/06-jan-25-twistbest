@@ -1,0 +1,277 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+/* Style the header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    margin-left: 50px;
+    margin-right: 50px;
+}  
+/* Style the logo */
+.logo-icon{
+    border: 1px solid;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-image: url('../img/SPG.png');
+    background-size: cover;
+    background-position: center;
+}
+/* Style the navigation menu */
+nav>a{
+    border: 1px solid;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+}
+.left-rounded{
+    border-radius: 5px 0 0 5px;
+}
+.right-rounded{
+    border-radius: 0 5px 5px 0;
+}
+/* Style the slideshow */
+.slideshow-container {
+    width: -webkit-fill-available;
+    height: fit-content;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    max-height: 500px;
+}
+.mySlides {
+    width: 100%;
+    height: 500px;
+}
+/* Style the content */
+.content{
+    height: 450px;
+}
+.profile-content{
+    display: flex;
+    text-align: justify;
+    height: 250px;
+    width: 90%;
+    line-height: 1.7;
+    text-indent: 35px;
+}
+
+/* Style the container */
+.widget-container{
+    position: absolute;
+    top: 74%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: #55555594;
+    color: chartreuse;
+    padding: 0px 20px;
+    font-size: 16px;
+    text-align: left;
+}
+.portofolio-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    position: relative;
+  height: 640px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container>div{
+    flex: 1;
+    padding: 10px;
+    width: 50%;
+}
+/* Style the table */
+table td{
+    padding: 2px;
+    vertical-align: top;
+}
+/* Style the section */
+section{
+    padding: 8px;
+    margin: 10px;
+}
+/* Style the form */
+input[type="text"],input[type="date"]{
+    width: -webkit-fill-available;
+}
+.text-report{
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+/* Style the button */
+.kirim{
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+}
+/* Style the scroll up button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+}
+/* Style the footer */
+footer {
+        padding: 10px;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+}
+
+/* Responsive layout - makes the menu and the logo stack on top of each other */
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px;
+            margin-left: 1px;
+            margin-right: 1px;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .logo-icon{
+            border: 1px solid;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            padding: 18px;
+            background-image: url(../img/SPG.png);
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 11px;
+        }
+        .profile-content{
+            display: flex;
+            text-align: justify;
+            height: 487px;
+            width: 90%;
+            line-height: 1.5;
+            text-indent: 35px;
+        }
+        .widget-container{
+            position: absolute;
+            top: 78%;
+            left: 32%;
+            transform: translate(-50%, -50%);
+            background-color: #55555594;
+            color: chartreuse;
+            padding: 0px 20px;
+            font-size: 12px;
+            text-align: left;
+        }
+        .portofolio-container{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+            position: relative;
+          height: 640px;
+        }
+        nav>a{
+            border: 1px solid;
+            padding: 8px;
+            color: black;
+            text-decoration: none;
+        }
+        nav{
+            display: flex;
+        }
+        .left-rounded{
+            border-radius: 5px 0 0 5px;
+        }
+        .right-rounded{
+            border-radius: 0 5px 5px 0;
+        }
+        table td{
+            padding: 2px;
+            vertical-align: top;
+        }
+        section{
+            padding: 8px;
+            margin: 10px;
+        }
+        input[type="text"],input[type="date"]{
+            width: -webkit-fill-available;
+        }
+        .text-report{
+            padding: 8px;
+            background-color: #f0f0f0;
+            border: 1px solid;
+            border-radius: 5px;
+            width: fit-content;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .container>div{
+            flex: 1;
+            padding: 0px;
+            width: 100%;
+        }
+        .container>div>img{
+            flex: 1;
+            padding: 0px;
+            width: 98%;
+            overflow: hidden;
+        }
+        em>img{
+            flex: 1;
+            padding: 2px;
+            width: 90%;
+            overflow: hidden;
+        }
+        footer {
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+      }

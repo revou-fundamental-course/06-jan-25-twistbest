@@ -5,8 +5,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css\style.css">
+    
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--logo and navigation -->
+    <header class="main-header">
+        <!--logo -->
+        <div class="logo-icon"></div>
+        <!--navigation -->
+        <nav>
+            <a href="#home-page" class="left-rounded">Home</a>
+            <a href="#our-profile">Our Profile</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#message-us" class="right-rounded">Message Us</a>
+        </nav>
+        </div>
+    </header>
+    <hr>
+    <main>
+    <!--Home Page-->
+    <section>
+            <header id="home-page">
+                
+            </header>
+            <div class="slideshow-container">
+                <img class="mySlides" src="img\power-plant.png">
+                <img class="mySlides" src="img\panel.png">
+                <img class="mySlides" src="img\troubleshoot.jpg">
+                <div class="widget-container">
+                    <h1>Welcome to Surya Perkasa Gemilang</h1>
+                    <h3>kami adalah Kontraktor Listrik Terbaik</h3>
+                    <h4>Kami telah lebih dari belasan tahun membantu banyak pelanggan </h4>
+                    <h4>di seluruh Indonesia untuk jasa perbaikan, pembuatan panel dan instalasi tegangan tinggi.</h4>
+                </div>
+            </div>
+    </section>
+
+    <!--Our Profile-->
+    <section>
+        <!--Title-->
+        <header id="our-profile">
+            <h1>Our Profile</h1>
+        </header>
+        <div class="container">
+        <div>
+        <div class="profile-content">
+            <em>
+                Tak dapat dipungkiri bahwa setiap sistem kelistrikan yang di maintain dengan baik
+                akan membuat kita merasa aman dan nyaman. 
+                Kenyamanan dapat diperoleh dari perawatan yang baik dan dilakukan secara berkala. 
+                kami akan memberikan solusi terbaik untuk Anda dalam hal perawatan sistem kelistrikan.
+                Kami juga memberikan jasa pembuatan panel listrik yang sesuai dengan kebutuhan Anda.
+                Kami juga memberikan jasa instalasi tegangan tinggi yang sesuai dengan standar PLN.
+                Kami juga memberikan jasa perbaikan listrik yang sesuai dengan kebutuhan Anda.
+                Kami juga memberikan jasa perbaikan panel listrik yang sesuai dengan kebutuhan Anda.
+                Kami juga memberikan jasa perbaikan instalasi tegangan tinggi yang sesuai dengan kebutuhan Anda.
+            </em>
+        </div>
+        <div class="profile-content">
+            <em>
+            <a href="index.html">Surya Perkasa Gemilang</a>
+            kami dirikan untuk memenuhi keinginan serta kebutuhan Anda,
+            serta menjawab kekhawatiran Anda terhadap perusahaan kontraktor yang ada
+            Surya Perkasa Gemilang kami dirikan dengan pondasi dasar spiritual company 
+            yang menjunjung tinggi nilai kejujuran, kepercayaan, kecerdasan, 
+            serta penyampaian yang baik. 
+            Tenaga kerja yang kami rekrut merupakan tenaga kerja terbaik 
+            untuk menunjang kualitas pekerjaan yang kami berikan. 
+            Kami menjadikan KUALITAS sebagai BUDAYA tertinggi kami 
+            sehingga apabila Anda tidak puas dengan manajemen Surya Perkasa Gemilang, 
+            silahkan langsung menghubungi saya melalui instagram.
+            </em>
+        </div>
+        </div>
+        <div>
+            <img src="img\panel_tegangan_tinggi.jpg" alt="">
+        </div>
+    </div>
+    </section>
+
+    <!--Portfolio-->
+    <section>
+         <!--Title-->
+         <header id="portfolio">
+            <h1>Portfolio</h1>
+         </header>
+         <div class="portfolio-container">
+            <em>
+            Portfolio kami mencakup pekerjaan yang telah kami lakukan selama bertahun-tahun.
+            Berikut adalah beberapa pekerjaan yang telah kami lakukan.
+            <p></p>
+            <li>perawatan sistem kelistrikan</li>
+            <li>pembuatan panel listrik</li>
+            <li>instalasi tegangan tinggi</li>
+            <li>perbaikan listrik</li>
+            <li>perbaikan panel listrik</li>
+            <li>perbaikan instalasi tegangan tinggi</li>
+            <p></p>
+            <img src="img\panelMDP.jpg" alt="panel MDP">
+            <img src="img\power-plant.png" alt="">
+            <img src="img\troubleshoot.jpg" alt="">
+            <img src="img\panel.png" alt="">
+            </em>
+                       
+         </div>
+    </section>
+<hr>
+    <!--Message Us-->
+    <section>
+         <!--Title-->
+         <header id="message-us">
+            <h1>Message Us</h1>
+         </header>
+         <div class="container">
+         <div>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" placeholder="Nama Anda" id="nameinput"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" id="tanggal-lahir"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" value="Laki-laki" id="jenis-kelamin-laki" name="jenis-kelamin">Laki-laki
+                        <input type="radio" value="Perempuan" id="jenis-kelamin-perempuan" name="jenis-kelamin">Perempuan                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td><textarea rows="8" cols="30" name="pesan" id="pesan"></textarea></td>
+                <tr>
+                    <td colspan="3"><button class="kirim" onclick="getreport()">Kirim</button></td>
+                </tr>
+        </table>
+        </div>
+        <div class="text-report">
+        <p>Current Time : <span id="Tanggal">13012025</span></p>
+        <p>Nama : <span id="nama-report"></span></p>
+        <p>Tanggal Lahir : <span id="tanggal-lahir-report"></span></p>
+        <p>Jenis Kelamin : <span id="jenis-kelamin-report"></span></p>
+        <p>Pesan : <span id="pesan-report"></span></p>
+        </div>
+        </div>   
+    </section>
     
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2025 - Surya Perkasa Gemilang - All rights reserved</p>
+    </footer>
+    <!--JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
