@@ -71,4 +71,4 @@ function topFunction() {
   }
   
 //membuat fungsi untuk menampilkan waktu
-getTime();
+setInterval(getTime, 1000);

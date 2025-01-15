@@ -95,9 +95,16 @@ nav{
     width: 50%;
 }
 /* Style the table */
+table {
+    border-collapse: collapse;
+    width: -webkit-fill-available;
+}
 table td{
     padding: 2px;
     vertical-align: top;
+}
+textarea{
+    width: -webkit-fill-available;
 }
 /* Style the section */
 section{
